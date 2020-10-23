@@ -1,16 +1,41 @@
 package ru.job4j.tracker;
 
-import org.junit.Test;
-import static org.hamcrest.Matchers.is;
-import static org.junit.Assert.assertThat;
+class Item {
+    private String id;
+    private String name;
 
-public class TrackerTest {
-    @Test
-    public void whenAddNewItemThenTrackerHasSameItem() {
-        Tracker tracker = new Tracker();
-        Item item = new Item("test1");
-        tracker.add(item);
-        Item result = tracker.findById(item.getId());
-        assertThat(result.getName(), is(item.getName()));
+    public Item(String name) {
+        this.name = name;
+    }
+
+    public Item(String id, String name) {
+        this.id = id;
+        this.name = name;
+    }
+
+    public Item() {
+
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    @Override
+    public String toString() {
+        return "Item id is " + id  +
+                ", Item name is " + name ;
     }
 }
