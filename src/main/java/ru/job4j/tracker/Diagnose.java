@@ -1,4 +1,4 @@
 package ru.job4j.tracker;
 
-public class Equipment {
+public class Diagnose {
 }

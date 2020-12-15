@@ -14,10 +14,14 @@ public class Profession {
     public String getSurname() {
         return surname;
     }
-    public String getEducation() {
+    public String getEducation()    {
         return education;
     }
     public LocalDate getBirthday() {
         return birthday;
+    }
+
+    public static void main(String[] args) {
+        Profession profession = new Profession();
     }
 }

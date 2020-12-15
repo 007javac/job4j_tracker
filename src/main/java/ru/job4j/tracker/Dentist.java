@@ -1,7 +1,8 @@
 package ru.job4j.tracker;
 
 public class Dentist extends Doctor {
-    public void learn(Equipment equipment) {
+    private int experience;
 
+    public Dentist(String name, String surname, String education, int birthday, int experience) {
     }
 }
