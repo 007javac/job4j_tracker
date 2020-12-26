@@ -1,9 +1,15 @@
 package ru.job4j.tracker;
 
 public class Builder extends Engineer {
+    String buildAddress;
+    Template template;
 
-    private boolean casque;
+    public Builder(String name, String surname, String education, String birthday, Project project, String buildAddress, Template template) {
+        super(name, surname, education, birthday, project);
+        this.buildAddress = buildAddress;
+        this.template = template;
+    }
 
-    public void buildHome() {
+    public void buildHome(Template template) {
     }
 }

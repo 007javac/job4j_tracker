@@ -1,12 +1,15 @@
 package ru.job4j.tracker;
 
 public class Pacient {
-    private int temperature;
-    private String symptom;
+    private String name;
+    private Diagnose diagnose;
 
-    public void medicinesReception() {
+    public Pacient(String name, Diagnose diagnose) {
+        this.name = name;
+        this.diagnose = diagnose;
     }
 
-    public void recoveryProgress() {
+    public Diagnose getDiagnose() {
+        return diagnose;
     }
 }

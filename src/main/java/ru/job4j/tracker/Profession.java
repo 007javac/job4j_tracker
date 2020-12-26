@@ -1,13 +1,25 @@
 package ru.job4j.tracker;
 
-import java.time.LocalDate;
-
 public class Profession {
     private String name;
     private String surname;
     private String education;
-    private LocalDate birthday;
+    private String birthday;
 
+    /**
+     * Конструктор для экземпляра профессии.
+     *
+     */
+    public Profession(String name, String surname, String education, String birthday) {
+        this.name = name;
+        this.surname = surname;
+        this.education = education;
+        this.birthday = birthday;
+    }
+    /**
+     * Геттеры для всех полей
+     * @return - значение поля.
+     */
     public String getName() {
         return name;
     }
@@ -17,11 +29,7 @@ public class Profession {
     public String getEducation()    {
         return education;
     }
-    public LocalDate getBirthday() {
+    public String getBirthday() {
         return birthday;
-    }
-
-    public static void main(String[] args) {
-        Profession profession = new Profession();
     }
 }

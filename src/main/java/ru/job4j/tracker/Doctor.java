@@ -1,15 +1,23 @@
 package ru.job4j.tracker;
 
 public class Doctor extends Profession {
+    Pacient pacient;
 
-    private Diagnose diagnose;
-    private String hospital;
-    private String badge;
-
-    public Diagnose heal(Pacient pacient) {
-        return diagnose;
+    /**
+     * Конструктор для экземпляра профессии.
+     *
+     * @param name
+     * @param surname
+     * @param education
+     * @param birthday
+     * @param pacient
+     */
+    public Doctor(String name, String surname, String education, String birthday, Pacient pacient) {
+        super(name, surname, education, birthday);
+        this.pacient = pacient;
     }
 
-    public void treatPacient() {
+    public Diagnose heal(Pacient pacient) {
+        return pacient.getDiagnose();
     }
 }
