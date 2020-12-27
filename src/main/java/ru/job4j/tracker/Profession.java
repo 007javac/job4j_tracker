@@ -6,6 +6,9 @@ public class Profession {
     private String education;
     private String birthday;
 
+    public static void main(String[] args) {
+
+    }
     /**
      * Конструктор для экземпляра профессии.
      *
