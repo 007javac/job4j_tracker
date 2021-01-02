@@ -9,4 +9,5 @@ public class JSONReport extends TexReport{
                 + "body : "+ body + System.lineSeparator()
                 + "}";
     }
+
 }
