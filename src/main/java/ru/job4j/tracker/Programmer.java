@@ -1,7 +1,7 @@
 package ru.job4j.tracker;
 
 public class Programmer extends Engineer {
-    String code;
+    private String code;
 
     /**
      * Конструктор для экземпляра профессии.

@@ -1,7 +1,7 @@
 package ru.job4j.tracker;
 
 public class Doctor extends Profession {
-    Pacient pacient;
+    private Pacient pacient;
 
     /**
      * Конструктор для экземпляра профессии.

@@ -1,7 +1,7 @@
 package ru.job4j.tracker;
 
 public class Engineer extends Profession {
-    Project project;
+    private Project project;
 
     /**
      * Конструктор для экземпляра профессии.
